@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Интерактивный плакат</title>
+  <style>
+    body {
+      font: 11pt Comic Sans, Helvetica, sans-serif;
+      /* Рубленый шрифт текста */
+      margin: 0;
+      /* Отступы на странице */
+      background: #ffe95f;
+    }
+
+    h1 {
+   
+      font-size: 36px;
+      /* Размер шрифта */
+      margin: 0;
+      /* Убираем отступы */
+      color: #fff;
+      /* Цвет текста */
+    }
+
+    h2 {
+      margin-top: 0;
+      /* Убираем отступ сверху */
+    }
+
+    #header {
+      /* Верхний блок */
+      background: #ffe95f;
+      /* Цвет фона */
+      padding:15px;
+      /* Поля вокруг текста */
+    }
+
+    #sidebar {
+      /* Левая колонка */
+      float: left;
+      /* Обтекание справа */
+      border: 1px solid #333;
+      /* Параметры рамки вокруг */
+      width: 20%;
+      /* Ширина колонки */
+      padding: 5px;
+      /* Поля вокруг текста */
+      margin: 10px 10px 20px 5px;
+      /* Значения отступов */
+    }
+
+    #content {
+      /* Правая колонка */
+      margin: 10px 30px 20px 2%;
+      /* Значения отступов */
+      padding: 5px;
+      /* Поля вокруг текста */
+      border: 1px solid #333;
+      /* Параметры рамки */
+    }
+
+    .leftpic {
+      display: flex;
+      align-self: center;
+    }
+
+    #footer {
+      /* Нижний блок */
+      background: #333;
+      /* Цвет фона */
+      color: #fff;
+      /* Цвет текста */
+      clear: left;
+      /* Отменяем действие float */
+    }
+
+    .block {
+      margin: 10px;
+      border: 40px solid #ffe95f;
+      padding: 10px;
+      display: flex;
+      background-image: url(f3.jpg);
+      background-size: contain;
+    }
+
+    .block-red {
+      border: 1px;
+      width: 30%;
+      display: flex;
+      align-items: center;
+
+    }
+
+    .block-orange {
+      width: 80%;
+      border: 3px;
+    }
+
+    .line {
+      width: 100%;
+      border: 3px;
+      box-sizing: border-box;
+    }
+
+    .content {
+      width: 110px;
+      height: 110px;
+    }
+
+    .content1 {
+      margin-left: 50%;
+    }
+
+    .content2 {
+      margin-left: 20%;
+    }
+
+    .content3 {
+      margin-left: 50%;
+    }
+
+    .content4 {
+      margin-left: 20%;
+    }
+
+    .content5 {
+      margin-left: 10%;
+    }
+
+  
+    .img-link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: black;
+    }
+
+    .btn {
+    display: inline-block; /* Строчно-блочный элемент */
+    background: #00cc66; /* Серый цвет фона */
+    color: #fff; /* Белый цвет текста */
+    padding: 1rem 1.5rem; /* Поля вокруг текста */
+    text-decoration: none; /* Убираем подчёркивание */
+    border-radius: 13px; /* Скругляем уголки */
+    display: flex;
+      align-items: center;
+   }
+
+  </style>
+</head>
+<div id="header">
+  <h1><br><center>ИНТЕРАКТИВНЫЙ ПЛАКАТ</center></h1>
+</div>
+<div class="block">
+  <div class="block-red">
+    <img src="abc.png" alt="" width="300" height="350" class="leftpic"></img>
+    <p><a href="7.html" class="btn">Игра</a></p>
+  </div>
+  <div class="block-orange">
+    <div class="line">
+      <div class="content content1">
+        <a href="2.html" class="img-link">
+          <img src="Д1.png" width="220" height="220"></img>
+        </a>
+      </div>
+    </div>
+    <div class="line">
+      <div class="content content2">
+        <a href="3.html" class="img-link">
+          <img src="Д02.png" width="220" height="220"></img>
+        </a>
+      </div>
+    </div>
+    <div class="line">
+      <div class="content content3">
+        <a href="4.html" class="img-link">
+          <img src="Д3.png" width="220" height="220"></img>
+        </a>
+      </div>
+    </div>
+    <div class="line">
+      <div class="content content4">
+        <a href="5.html" class="img-link">
+          <img src="Д04.png" width="220" height="220"></img>
+        </a>
+      </div>
+    </div>
+    <div class="line">
+      <div class="content content5">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="footer">&copy; Куксенок Анастасия</div>
+</body>
+
+</html>
